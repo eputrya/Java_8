@@ -1,4 +1,4 @@
-package main.java.com.Putrya_E.javacore.chapter9.MyPack;
+package main.java.com.Putrya_E.javacore.chapter9.packages.MyPack;
 
 public class Balance {
     String name;

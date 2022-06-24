@@ -1,5 +1,5 @@
-package main.java.com.Putrya_E.javacore.chapter9.p2;
-import main.java.com.Putrya_E.javacore.chapter9.p1.*;
+package main.java.com.Putrya_E.javacore.chapter9.packages.p2;
+import main.java.com.Putrya_E.javacore.chapter9.packages.p1.*;
 
 public class OtherPackage {
     OtherPackage(){

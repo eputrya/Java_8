@@ -1,4 +1,4 @@
-package main.java.com.Putrya_E.javacore.chapter9.p2;
+package main.java.com.Putrya_E.javacore.chapter9.packages.p2;
 
 public class Demo {
     public static void main(String[] args) {
