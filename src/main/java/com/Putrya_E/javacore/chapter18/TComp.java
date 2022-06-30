@@ -35,13 +35,13 @@ class TreeMapDemo2 {
         // получить множество элементов
         Set<Map.Entry<String, Double>> set = tm.entrySet();
 
-//        // вывести элементы из множества
-//        for (Map.Entry<String, Double> me : set) {
-//            System.out.print(me.getKey() + ": ");
-//            System.out.println(me.getValue());
-//        }
-//
-//        System.out.println();
+        // вывести элементы из множества
+        for (Map.Entry<String, Double> me : set) {
+            System.out.print(me.getKey() + ": ");
+            System.out.println(me.getValue());
+        }
+
+        System.out.println();
 
         // внести сумму 1000 на счет Джона Доу
         double balance = tm.get("Джон Доу");
