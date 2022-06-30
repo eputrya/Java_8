@@ -7,7 +7,7 @@ import java.util.TreeMap;
 public class TComp implements Comparator<String> {
     public int compare(String aStr, String bStr) {
         int i, j, k;
-
+:
         // найти индекс символа, с которого начинается фамилия
         i = aStr.lastIndexOf(' ');
         j = bStr.lastIndexOf(' ');
