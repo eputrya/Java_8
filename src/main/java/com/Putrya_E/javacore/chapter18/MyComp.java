@@ -1,7 +1,5 @@
 package main.java.com.Putrya_E.javacore.chapter18;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.TreeSet;
+import java.util.*;
 
 // Компаратор для сравнения символьных строк в обратном порядке
 public class MyComp implements Comparator<String> {
@@ -31,6 +29,28 @@ class CompDemo {
         // вывести элементы из древовидного множества
         for(String element : ts)
             System.out.print(element + " ");
+        System.out.println();
+    }
+}
+
+class CompDemo2 {
+    public static void main(String[] args) {
+
+        // передать компаратор с обратным упорядочением древовидному множеству типа TreeSet
+        TreeSet<String> ts = new TreeSet<>((aStr, bStr) -> bStr.compareTo(aStr));
+
+        // ввести элементы в древовидное множество
+        ts.add("C");
+        ts.add("A");
+        ts.add("B");
+        ts.add("E");
+        ts.add("F");
+        ts.add("D");
+        // вывести элементы из древовидного множества
+        for (String element : ts){
+            System.out.print(element + " ");
+        }
+
         System.out.println();
     }
 }
