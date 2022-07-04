@@ -1,11 +1,11 @@
 package main.java.com.Putrya_E.javacore.chapter18;
-import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Set;
 
-public class HTDemo {
+public class HTDemo2 {
     public static void main(String[] args) {
         Hashtable<String, Double> balance = new Hashtable<>();
-        Enumeration<String> names;
 
         String str;
         double bal;
@@ -16,16 +16,22 @@ public class HTDemo {
         balance.put("Том Холл", 99.22);
         balance.put("Ральф Смит", -19.08);
 
-        // показать все счета в хеш-таблице
-        names = balance.keys();
-        while (names.hasMoreElements()) {
-            str = names.nextElement();
+        // Вывести все счета в хеш-таблице. Сначало получить представление всех ключей в виде множества.
+        Set<String> set = balance.keySet();
+
+        // получить итератор
+        Iterator<String> itr = set.iterator();
+
+        while (itr.hasNext()) {
+            str = itr.next();
             System.out.println(str + ": " + balance.get(str));
         }
+
         System.out.println();
+
         // внести сумму 1000 на счет Джона Доу
         bal = balance.get("Джон Доу");
-        balance.put("Джон Доу", bal+1000);
+        balance.put("Джон Доу", bal + 1000);
         System.out.println("Новый остаток на счете Джона Доу: " + balance.get("Джон Доу"));
     }
 }
