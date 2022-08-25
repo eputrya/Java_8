@@ -35,8 +35,8 @@ class GenDemo {
         iOb.showType();
 
         // получить значение переменной iOb. Обратите внимание на то, что для этого не требуется никакого приведения типов
-        int v = iOb.getOb();
-        System.out.println("Значение: " + v);
+
+        System.out.println("Значение: " + iOb);
         System.out.println();
 
         // создать объект типа Gen для символьных строк
