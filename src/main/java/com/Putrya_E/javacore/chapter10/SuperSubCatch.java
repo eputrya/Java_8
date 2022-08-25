@@ -17,8 +17,7 @@ public class SuperSubCatch {
         }
         /*  Этот оператор catch вообще не будет достигнут, т.к.
             подкласс ArithmeticException является производным
-            от класса Exception
-         */
+            от класса Exception */
         catch (ArithmeticException e) {
            // ОШИБКА: недотижимый код!
           System.out.println("Этот код вообще непостижим.");
