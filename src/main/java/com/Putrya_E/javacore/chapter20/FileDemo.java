@@ -1,6 +1,8 @@
 package main.java.com.Putrya_E.javacore.chapter20;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStreamReader;
 
 //Продемонстрировать применение некоторых методов из класса File
 public class FileDemo {
