@@ -34,7 +34,7 @@ public class ExplicitChannelRead2 {
                     // читать байты данных из буфера и
                     // выводить их на экран как символы
                     for (int i = 0; i < count; i++)
-                        System.out.println((char) c);
+                        System.out.println((char) mBuf.get());
                 }
             } while (count != -1);
             System.out.println();
