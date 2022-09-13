@@ -3,7 +3,7 @@ package main.java.com.Putrya_E.javacore.chapter3;
 // Продемонстрировать применение одномерного массива
 public class Array {
     public static void main(String[] args) {
-        int month_days[];
+        int[] month_days;
         month_days = new int[12];
         month_days[0] = 31;
         month_days[1] = 28;
