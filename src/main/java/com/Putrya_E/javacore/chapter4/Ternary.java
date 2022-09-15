@@ -12,9 +12,7 @@ public class Ternary {
 
         i = -10;
         k = i < 0 ? -i : i; // получить абсолютное значения переменной i
-        System.out.println("Абсолютное значение  ");
-
-        System.out.println("Абсолютное значение  ");
+        System.out.print("Абсолютное значение  ");
         System.out.println(i + " равно " + k);
 
     }
