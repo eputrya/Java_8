@@ -14,7 +14,7 @@ public class ForEach3 {
 
         // использовать цикл for в стиле for each для
         // вывода и суммирования значений
-        for (int x[] : nums) {
+        for (int[] x : nums) {
             for (int y : x) {
                 System.out.println("Значение равно: " + y);
                 sum += y;
