@@ -16,8 +16,10 @@ public class Break {
                     if (t) break second; // выход из блока second
                     System.out.println("Этот оператор не будет выпролняться");
                 }
-                System.out.println("Этот оператор следует за блоком second.");
+                System.out.println("Этот оператор не будет выпролняться");
             }
+            System.out.println("Этот оператор следует за блоком second.");
         }
     }
 }
+
