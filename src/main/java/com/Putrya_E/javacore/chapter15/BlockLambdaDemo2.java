@@ -10,7 +10,7 @@ public class BlockLambdaDemo2 {
     public static void main(String[] args) {
         // Это блочное выражение изменяет на обратный
         // порядок следования символов в строке
-        StringFunc reverse = (str) -> {
+        StringFunc3 reverse = (str) -> {
             String result = "";
             int i;
 
