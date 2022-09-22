@@ -11,7 +11,7 @@ public class VarCapture {
         // Локальная переменная, которая может быть захвачена
         int num = 10;
 
-        MyFunc myLambda = (n) -> {
+        MyFunc5 myLambda = (n) -> {
             // Такое применение переменной num допустимо, поскольку
             // она не видоизменяется
             int v = num + n;
