@@ -1,6 +1,6 @@
 package main.java.com.Putrya_E.javacore.chapter3;
 
-// Усовершенствованная версия предыдущей программы
+// Усовершенствованная версия предыдущей программы.
 public class AutoArray {
     public static void main(String[] args) {
 
