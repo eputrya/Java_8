@@ -14,7 +14,7 @@ import java.lang.reflect.*;
 
 public class Meta {
     // аннотировать метод
-    @MyAnno(str = "Пример аннотации", val = 100)
+    @MyAnno2(str = "Пример аннотации", val = 100)
     public static void myMeth() {
 
         Meta ob = new Meta();
@@ -31,7 +31,7 @@ public class Meta {
             Method m = c.getMethod("myMeth");
 
             // далее получить аннотацию для данного класса
-            MyAnno anno = m.getAnnotation(MyAnno.class);
+            MyAnno2 anno = m.getAnnotation(MyAnno2.class);
 
             // и наконец, вывести значение членов аннотации
             System.out.println(anno.str() + " " + anno.val());
