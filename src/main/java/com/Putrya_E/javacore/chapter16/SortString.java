@@ -1,5 +1,7 @@
 package main.java.com.Putrya_E.javacore.chapter16;
 
+import java.util.Scanner;
+
 // Пузырьковая сортировка объектов типа String
 public class SortString {
     static String[] arr = {
@@ -17,6 +19,7 @@ public class SortString {
                 }
             }
             System.out.println(arr[j]);
+
         }
     }
 }
