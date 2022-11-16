@@ -30,7 +30,7 @@ class BeingWatched2 extends Observable {
     void counter(int period) {
         for (; period >= 0; period--) {
             setChanged();
-            notifyObservers(new Integer(period));
+            notifyObservers((period));
 
             try {
                 Thread.sleep(100);
