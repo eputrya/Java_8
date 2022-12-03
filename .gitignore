@@ -25,3 +25,4 @@ hs_err_pid*
 
 .idea
 Java_8.iml
+out/
