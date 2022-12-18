@@ -1,24 +1,42 @@
 package main.java.com.Putrya_E.javacore.chapter11;
 
-// Неправильная реализация поставщика и потребителя
-class Q {
+// Правильная реализация поставщика и потребителя
+class Q2 {
     int n;
+    boolean valueSet = false;
 
     synchronized int get() {
+        while (!valueSet)
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                System.out.println("Исключение типа InterupptedExeption перехвачено");
+            }
+
         System.out.println("Получено: " + n);
+        valueSet = false;
+        notify();
         return n;
     }
 
     synchronized void put(int n) {
+        while (valueSet)
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                System.out.println("Исключение типа InterruptedException перехвачено");
+            }
         this.n = n;
+        valueSet = true;
         System.out.println("Отправлено: " + n);
+        notify();
     }
 }
 
-class Producer implements Runnable {
+class Producer2 implements Runnable {
     Q2 q;
 
-    Producer(Q2 q) {
+    Producer2(Q2 q) {
         this.q = q;
         new Thread(this, "Поставщик").start();
     }
@@ -32,10 +50,10 @@ class Producer implements Runnable {
     }
 }
 
-class Consumer implements Runnable {
+class Consumer2 implements Runnable {
     Q2 q;
 
-    Consumer(Q2 q) {
+    Consumer2(Q2 q) {
         this.q = q;
         new Thread(this, "Потребитель").start();
     }
@@ -47,7 +65,7 @@ class Consumer implements Runnable {
     }
 }
 
-public class PC {
+public class PCFixed {
     public static void main(String[] args) {
         Q2 q = new Q2();
         new Producer2(q);
