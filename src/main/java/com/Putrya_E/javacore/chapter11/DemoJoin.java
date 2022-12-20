@@ -28,9 +28,9 @@ class NewThread4 implements Runnable {
 
 public class DemoJoin {
     public static void main(String[] args) {
-        NewThread4 ob1 = new NewThread4("Один");
-        NewThread4 ob2 = new NewThread4("Два");
-        NewThread4 ob3 = new NewThread4("Три");
+        NewThread5 ob1 = new NewThread5("Один");
+        NewThread5 ob2 = new NewThread5("Два");
+        NewThread5 ob3 = new NewThread5("Три");
 
         System.out.println("Поток Один запущен: " + ob1.t.isAlive());
         System.out.println("Поток Два запущен: " + ob2.t.isAlive());
