@@ -52,7 +52,7 @@ public class SuspendResume {
             ob1.mysuspend();
             System.out.println("Приостоновка потока Один");
             Thread.sleep(1000);
-            ob1.mysuspend();
+            ob1.myresume();
             System.out.println("Возобновление потока Один");
             ob2.mysuspend();
             System.out.println("Приостоновка потока Два");
@@ -60,7 +60,7 @@ public class SuspendResume {
             ob2.myresume();
             System.out.println("Возобновление потока Два");
         } catch (InterruptedException e) {
-            System.out.println("Ш=Главный поток прерван");
+            System.out.println("Главный поток прерван");
         }
 
         // ожидать завершения потоков исполнения
