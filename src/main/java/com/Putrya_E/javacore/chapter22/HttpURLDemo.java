@@ -2,9 +2,7 @@ package main.java.com.Putrya_E.javacore.chapter22;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 // Продемонстрировать применение класса HttpURLConnection
 public class HttpURLDemo {
